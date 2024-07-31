@@ -8,20 +8,22 @@ import Servicio from'./Components/Servicio/Servicio';
 import Portfolio from'./Components/Portfolio/Portfolio';
 import Opiniones from'./Components/Opiniones/Opiniones';
 import Footer from'./Components/Footer/Footer';
-import { Box } from "@chakra-ui/react";
+import { Box, ChakraProvider } from "@chakra-ui/react";
 
 function App() {
 
   return (
-    <Box className='app' display="flex" flexDirection="column"  bg="#331949" color="white" fontFamily="Poppins" >
-      <Header/>
-      <Hero/>
-      <About/>
-      <Servicio/>
-      <Portfolio/>
-      <Opiniones/>
-      <Footer/>
-    </Box>
+    <ChakraProvider>
+      <Box className='app' display="flex" flexDirection="column"  bg="#331949" color="white" fontFamily="Poppins" >
+        <Header/>
+        <Hero/>
+        <About/>
+        <Servicio/>
+        <Portfolio/>
+        <Opiniones/>
+        <Footer/>
+      </Box>
+    </ChakraProvider>
 
   )
 }
