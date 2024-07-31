@@ -1,4 +1,4 @@
-ximport React, { useState } from 'react';
+import React, { useState } from 'react';
 import {
   Box,
   Flex,
